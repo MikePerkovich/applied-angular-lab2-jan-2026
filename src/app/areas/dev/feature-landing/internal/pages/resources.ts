@@ -64,7 +64,7 @@ import { PageLayout } from '@ht/shared/ui-common/layouts/page';
               </div>
               <div>
                 <a
-                  href="https://thisis.angular.dev"
+                  href="https://dev.to/this-is-angular"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link link-primary font-semibold"
