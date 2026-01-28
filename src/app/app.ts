@@ -120,15 +120,21 @@ export class App {
   store = inject(authStore);
   links = signal<(SectionLink & { icon: IconName })[]>([
     {
+      path: '/links',
+      title: 'Resources Links',
+      icon: 'lucideNewspaper',
+    },
+    {
+      path: '/tasks',
+      title: 'Task List',
+      icon: 'lucideFileCheck',
+    },
+    {
       icon: 'lucideCode',
       path: '/dev',
       title: 'Dev Stuff',
     },
-    {
-      icon: 'lucideLink',
-      path: '/links',
-      title: 'Links',
-    },
+
     {
       path: '/counting',
       title: 'Counting',
@@ -144,11 +150,6 @@ export class App {
       path: '/lab1',
       title: 'Lab 1',
       icon: 'lucideFlaskConical',
-    },
-    {
-      path: '/tasks',
-      title: 'Task List',
-      icon: 'lucideFileCheck',
     },
   ]);
 }

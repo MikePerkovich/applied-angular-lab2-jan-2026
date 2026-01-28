@@ -23,11 +23,7 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./areas/dev/demos-aa-landing/demos-aa.routes').then((r) => r.demosAaFeatureRoutes),
   },
-  {
-    path: 'links',
-    loadChildren: () =>
-      import('./areas/links/feature-landing/landing.routes').then((r) => r.linksFeature),
-  },
+
   {
     path: 'counting',
     loadChildren: () =>
@@ -46,6 +42,13 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./areas/tasks/feature-list/list-landing/list.routes').then(
         (r) => r.listFeatureRoutes,
+      ),
+  },
+  {
+    path: 'links',
+    loadChildren: () =>
+      import('./areas/resources/feature-links/links-landing/links.routes').then(
+        (r) => r.linksFeatureRoutes,
       ),
   },
   {

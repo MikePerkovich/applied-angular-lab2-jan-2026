@@ -24,6 +24,7 @@ import {
   lucideX,
   lucideChessKing,
   lucideFileCheck,
+  lucideNewspaper,
 } from '@ng-icons/lucide';
 
 export const icons = {
@@ -52,6 +53,7 @@ export const icons = {
   lucideX,
   lucideChessKing,
   lucideFileCheck,
+  lucideNewspaper,
 } as const;
 
 export type IconName = keyof typeof icons;
