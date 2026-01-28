@@ -102,16 +102,13 @@ import { Key } from 'node:readline';
 })
 export class App {
   protected router = inject(Router);
-  helpModel = viewChild('helpModal');
+  helpModel = viewChild<ElementRef<HTMLDialogElement>>('helpModal');
   showModal() {
-    console.log('showing the modal');
-    const modal = this.helpModel() as ElementRef<HTMLDialogElement>;
-    modal.nativeElement.showModal();
+    this.helpModel()?.nativeElement.showModal();
   }
   onHelpRequested() {
     // For a somewhat useful list of the key combinationes, see https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values
 
-    console.log('Getting you help...');
     this.router.navigate(['/home/help']);
   }
 
