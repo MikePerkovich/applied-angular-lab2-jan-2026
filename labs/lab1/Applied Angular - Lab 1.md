@@ -1,5 +1,7 @@
 # Applied Angular - Lab 1
 
+> If You are Doing This Again, Create a new Area and Use the Scaffold In the New Area - e.g. Lab 2
+
 ## Scaffold a New Area
 
 You will create a new area and feature for this lab.

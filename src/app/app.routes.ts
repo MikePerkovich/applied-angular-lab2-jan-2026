@@ -54,7 +54,16 @@ export const routes: Routes = [
   {
     path: 'breakfast',
     loadChildren: () =>
-      import('./areas/food/feature-breakfast/breakfast-landing/breakfast.routes').then((r) => r.breakfastFeatureRoutes),
+      import('./areas/food/feature-breakfast/breakfast-landing/breakfast.routes').then(
+        (r) => r.breakfastFeatureRoutes,
+      ),
+  },
+  {
+    path: 'books',
+    loadChildren: () =>
+      import('./areas/books/feature-list/list-landing/list.routes').then(
+        (r) => r.listFeatureRoutes,
+      ),
   },
   {
     path: '**',

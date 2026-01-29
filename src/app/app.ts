@@ -206,5 +206,10 @@ export class App {
       title: 'Lab 1',
       icon: 'lucideFlaskConical',
     },
+    {
+      path: '/books',
+      title: 'Lab 2 - Books',
+      icon: 'lucideFlaskConical',
+    },
   ]);
 }
